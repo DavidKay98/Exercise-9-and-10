@@ -1,0 +1,34 @@
+body {
+  background-color: black;
+  color: red;
+}
+
+@media only screen and (min-width: 600px ){
+  body {background-color: black;}
+  .vl { display: block;}
+  .s, .m, .l, .vs {display: none;}
+}
+
+@media only screen and (max-width: 600px ){
+  body {background-color: yellow;}
+  .vs { display: block;}
+  .s, .m, .l, .vl {display: none;}
+}
+
+@media only screen and (max-width: 768px ){
+  body {background-color: blue;}
+  .s { display: block;}
+  .vs, .m, .l, .vl {display: none;}
+}
+
+@media only screen and (max-width: 992px ){
+  body {background-color: blue;}
+  .m { display: block;}
+  .s, .vs, .l, .vl {display: none;}
+}
+
+@media only screen and (max-width: 1200px ){
+  body {background-color: blue;}
+  .l { display: block;}
+  .s, .m, .vs, .vl {display: none;}
+}
